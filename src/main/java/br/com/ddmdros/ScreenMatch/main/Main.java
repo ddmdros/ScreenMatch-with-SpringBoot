@@ -1,5 +1,6 @@
 package br.com.ddmdros.ScreenMatch.main;
 
+import br.com.ddmdros.ScreenMatch.model.EpisodeData;
 import br.com.ddmdros.ScreenMatch.model.SeasonData;
 import br.com.ddmdros.ScreenMatch.model.SeriesData;
 import br.com.ddmdros.ScreenMatch.service.ApiRequest;
@@ -28,8 +29,6 @@ public class Main {
         SeriesData data = converter.getData(json,SeriesData.class);
         System.out.println(data);
 
-//                            "https://www.omdbapi.com/?t=gilmore+girls&season=" + i + "&apikey=6585022c"
-
 		for (int i = 1; i <= data.totalSeasons(); i++){
 			json = apiRequest.getData
                     (OMDB_WEB_ADDRESS + serieName.replace(" ", "+") + "&season=" + i + API_KEY);
@@ -38,7 +37,7 @@ public class Main {
 		}
 		seasons.forEach(System.out::println);
 
-
+        seasons.forEach(s -> s.episodes().forEach(t -> System.out.println(t.title())));
 
     }
 
