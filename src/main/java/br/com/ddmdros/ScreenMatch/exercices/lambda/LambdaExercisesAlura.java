@@ -6,10 +6,7 @@ import java.util.List;
 
 public class LambdaExercisesAlura {
 
-
-    // <editor-fold desc="Main">
     public static void main(String[] args) {
-
 
         //exercicio1();
         //exercicio2();
@@ -19,8 +16,6 @@ public class LambdaExercisesAlura {
         //exercicio6();
         //exercicio7();
     }
-
-    // </editor-fold>
 
     // <editor-fold desc="Exercícios">
 
@@ -107,6 +102,7 @@ public class LambdaExercisesAlura {
             System.out.println(e.getMessage());
         }
     }
+    
 // </editor-fold>
 
 }
