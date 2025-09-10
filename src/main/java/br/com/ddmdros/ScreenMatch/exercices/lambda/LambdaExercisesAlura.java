@@ -51,6 +51,7 @@ public class LambdaExercisesAlura {
     }
 
     public static void exercicio4(){
+
         IExercicio4 palindromo = str -> str.equals(new StringBuilder(str).reverse().toString());
         System.out.println(palindromo.verificaPalindromo("radar"));
         System.out.println(palindromo.verificaPalindromo("java"));
@@ -64,19 +65,19 @@ public class LambdaExercisesAlura {
         numeros.replaceAll(n -> n*3);
         System.out.println(numeros);
 
-        List<Integer> triplo = new ArrayList<>();
-        IExercicio5.listaInteiros.add(4);
-        IExercicio5.listaInteiros.add(3);
-        IExercicio5.listaInteiros.add(4);
-        IExercicio5.listaInteiros.add(5);
-        IExercicio5.listaInteiros.add(6);
-
-        IExercicio5.listaInteiros.forEach (v ->{
-            triplo.add(v*3);
-        });
-
-        System.out.println(IExercicio5.listaInteiros);
-        System.out.println(triplo);
+//        List<Integer> triplo = new ArrayList<>();
+//        IExercicio5.listaInteiros.add(4);
+//        IExercicio5.listaInteiros.add(3);
+//        IExercicio5.listaInteiros.add(4);
+//        IExercicio5.listaInteiros.add(5);
+//        IExercicio5.listaInteiros.add(6);
+//
+//        IExercicio5.listaInteiros.forEach (v ->{
+//            triplo.add(v*3);
+//        });
+//
+//        System.out.println(IExercicio5.listaInteiros);
+//        System.out.println(triplo);
 
     }
 
@@ -102,7 +103,7 @@ public class LambdaExercisesAlura {
             System.out.println(e.getMessage());
         }
     }
-    
+
 // </editor-fold>
 
 }
